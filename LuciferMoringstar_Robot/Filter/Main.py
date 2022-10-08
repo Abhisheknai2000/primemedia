@@ -28,7 +28,7 @@ async def filter(client, message):
                 return
         except UserNotParticipant:
             await client.send_message(
-                chat_id=message.forward,
+                chat_id="message.GetChats",
                 text="**Please Join My Updates Channel to use this Bot!**",
                 reply_markup=InlineKeyboardMarkup(
                     [
